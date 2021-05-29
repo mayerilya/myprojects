@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="index.css">
+	<script type="application/javascript" src="main.js">
+	</script>
+    <title>Emotional AI</title>
+  </head>
+  <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="grid-container">
+      <div class="header"><img src="Neuro.png" width="100%" height="auto">
+	  </div>
+        <div class="pic">
+		  <h2>Эмоциональный искусственный интеллект (Emotion AI)</h2>
+            <div class="parallax"></div>
+            <p>Эмоциональный искусственный интеллект (Emotion AI) — это ИИ, 
+			который позволяет компьютеру распознавать и интерпретировать человеческие эмоции и реагировать на них. Камера, 
+			микрофон или нательный датчик считывают состояние человека, а нейросеть обрабатывает данные, чтобы определить эмоцию.
+			</p>
+       	</div>
+      <div class="grid-item text1">
+    <h2>Есть два основных способа анализа эмоций:</h2>
+	  </div>
+      <div class="grid-item lefttext1">Контактный. На человека надевают прибор, который считывает его пульс, электрические импульсы тела и другие физиологические показатели. Такие технологии позволяют определить не только эмоции, но и уровень стресса или вероятность эпилептического припадка.
+	  </div>
+	  <div class="grid-item righttext1">Бесконтактный. Эмоции анализируют на основе видео- и аудиозаписей. Компьютер изучает мимику, жесты, движение глаз, голос и речь.
+	  </div>
+	  <div class="grid-item panel1"><img src="surprise.png" width="100%" height="auto">
+	  <p>Для обучения используется набор заранее размеченных изображений лиц, каждому из которых поставлена в соответствие изображенная на нем эмоция. В процессе обучения нейронная сеть самостоятельно выясняет, что определяет эмоцию человека, в результате получается готовый алгоритм.</p>
+	  </div>
+	  <div class="grid-item panel2"><img src="raspoznavanie_emociy.jpg" width="100%" height="auto">
+	  <p> Также существуют подходы, при которых на лице изначально определяются Action Unit’ы (опущенные брови, приподнятый подбородок, сморщенный нос и т.д.), а дальше по их комбинации определяется конечная эмоция.</p>
+	  </div>
+	  <div class="grid-item panel3"><img src="gol.jpg" width="100%" height="auto">
+	  <p>Нейросеть выделяет из акустического сигнала множество параметров голоса — например, тон и ритмичность. Она изучает их изменение во времени и определяет состояние говорящего. Иногда для обучения используют спектрограмму — изображение, которое показывает мощность и частоту сигнала во времени. Кроме того, для более точного результата ИИ анализирует лексику</p>
+	  </div>
+	  <div class="grid-item text3"><h3>Галерея фото</h3>
+          <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="1.gif" style="width:100%">
+                <div class="text">Презентация возможностей искуственного интеллекта</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="raspoznavanie_emociy.jpg" style="width:100%">
+                <div class="text">Анализ лица</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="s.jpeg" width="70%" height="auto">
+                <div class="text">Анализированные эмоции</div>
+              </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>  
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+	  </div>
+	  <div class="grid-item left"><h2>Обратная связь</h2>
+	  <div class="cover">
+    <form id="contactform"> 
+        <p class="contact"><label for="name">Имя</label></p> 
+        <input id="name" name="name" placeholder="Ваше имя" required="" tabindex="1" type="text"> 
+ 
+        <p class="contact"><label for="email">Email</label></p> 
+        <input id="email" name="email" placeholder="example@sitehere.ru" required="" tabindex="2" type="text"> 
+ 
+        <p class="contact"><label for="Subject">Тема</label></p> 
+        <input id="subject" name="subject" placeholder="Тема сообщения" required="" tabindex="2" type="text"> 
+ 
+        <p class="contact"><label for="comment">Сообщение</label></p> 
+        <textarea name="comment" id="comment" tabindex="4"></textarea> <br>
+        <input name="submit" id="submit" tabindex="5" value="Отправить" type="submit"> 	 
+    </form> 
+</div>
+	  </div>
+	  <div class="grid-item right"><h2>Мы расположены по адресу</h2> 
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4490.358353671518!2d37.63246603073335!3d55.75538958876073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a58c6172429%3A0xfcb85abcb2f78324!2z0JrQuNGC0LDQuS3Qs9C-0YDQvtC0!5e0!3m2!1sru!2sru!4v1579301879432!5m2!1sru!2sru" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	  </div>
+	  <div class="grid-item nizl">Content,Layout: mayer</div>
+	  <div class="grid-item nizr">All photos are property of their owners</div>
+    </div>
+  </body>
+</html>

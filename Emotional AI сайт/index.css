@@ -1,0 +1,307 @@
+html, body 
+        {
+            margin: 0;
+			padding: 0;
+            height: 100%;
+            background-color: whitesmoke;
+        }
+.parallax {
+    /* The image used */
+    background-image: url('1.gif');
+
+    /* Full height */
+    height: 750px;
+	width: 1fr;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</      
+.grid-container {
+        height: 180vh;
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'pic pic'
+          'text1 text1'
+          'lefttext1 righttext1'
+		  'panel1 panel1'
+		  'panel2 panel2'
+		  'panel3 panel3'
+		  'text3 text3'
+		  'left left'
+          '. .'
+          'right right' 
+		  'nizl nizr';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 140px  1fr 60px 1fr 2fr 2fr 2fr 1fr 1fr 60px;
+		}
+	.grid-item {
+        text-align: center;
+        
+        }
+    .header {
+	grid-area: header; 
+	text-align:center;
+	}
+	.pic {
+	grid-area: pic;
+    text-align:center;
+	}
+	.text1{ 	
+	grid-area: text1;
+	
+	}
+	.lefttext1{	
+	grid-area: lefttext1;
+	padding-top:50px;
+background-color: azure;
+	}
+	.righttext1{	 
+	grid-area: righttext1;
+	padding-top:50px;
+        background-color: azure;
+	}
+	.panel1{	
+	grid-area: panel1; 
+background-color:antiquewhite;
+	}
+	.panel2{	
+	grid-area: panel2; 
+        background-color:antiquewhite;
+	}
+	.panel3{	
+	grid-area: panel3;
+	background-color:antiquewhite;	
+	}
+    .text3 {	
+	grid-area: text3;
+	padding-bottom:50px;
+	}
+	.left{	
+	padding:40px 20px 50px 20px;
+	grid-area: left; 
+	background-color:#2a9fbc;
+	color: white;
+	}
+	.right{	
+	padding:40px 20px 50px 20px;
+	grid-area: right; 
+	background-color: #ff5400;
+	color: white;
+	}			
+    .nizr {
+    grid-area: nizr;
+	color:white;
+    background-color: black;
+	}
+    .nizl 
+	{
+    grid-area: nizl;
+	color:white;
+    background-color: black;
+	}
+@media screen and (min-width: 600px) 
+{
+    .grid-container 
+	{
+		height: 150vh;
+        display: grid;
+        grid-template-areas:
+            '. . . header header . . .'
+            'pic pic pic pic pic pic pic pic'
+            'text1 text1 text1 text1 text1 text1 text1 text1'
+            'lefttext1 lefttext1 lefttext1 lefttext1 righttext1 righttext1 righttext1 righttext1'
+			'. . . . . . . .'
+			'. panel1 . panel2 panel2 . panel3 .'
+			'. . . . . . . .'
+			'text3 text3 text3 text3 text3 text3 text3 text3'
+			'left left left left right right right right'
+			'nizl nizl nizl nizl nizr nizr nizr nizr';
+        grid-template-columns: 1fr 170px 14px 85px 85px 14px 170px 1fr;
+        grid-template-rows: 140px  1fr 60px 1fr 10px 4fr 10px 1fr 1fr 60px;
+	}
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+* {box-sizing:border-box}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev
+{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.cover {
+    width:100%; 
+    margin:auto; 
+}
+ 
+p.contact {  
+    color: white; 
+}
+ 
+#contact {
+    margin-bottom: 0px; 
+}
+ 
+input[type="text"] {
+    width: 70%; 
+}
+ 
+textarea { 
+    width: 70%; 
+    height: 10%; 
+}
+ 
+label { 
+    color: white; 
+}
+ 
+input, textarea { 
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 5px solid rgba(122, 192, 0, 0.15);  
+    color: #4b4b4b; ; 
+    -webkit-border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+ 
+input:focus, textarea:focus { 
+    border: 3px solid red; 
+    background-color: rgba(255, 255, 255, 1);
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 36px 8px 36px;
+    -moz-border-radius: 10px;
+    background: rgba(122, 192, 0, 1);
+}
+ 
+input[type="submit"]:hover {
+    color: #fff; 
+    background-color: #ff5400;
+
+ 
+input[type="submit"]:active { 
+    top: 1px; 
+}
+    
